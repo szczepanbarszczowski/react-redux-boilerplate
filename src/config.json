@@ -1,0 +1,9 @@
+{
+	"env": "development",
+	"site": {
+		"domain": "localhost:3000"
+	},
+	"api": {
+		"baseUrl": "http://api.staging.foundersofcolor.com/v1/"
+	}
+}

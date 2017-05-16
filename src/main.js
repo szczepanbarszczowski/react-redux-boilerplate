@@ -1,13 +1,14 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import createStore from './store/createStore'
+import { browserHistory } from 'react-router'
+import createStore from 'redux/store/configureStore'
 import AppContainer from './containers/AppContainer'
 
 // ========================================================
 // Store Instantiation
 // ========================================================
 const initialState = window.__INITIAL_STATE__
-const store = createStore(initialState)
+const store = createStore(initialState, browserHistory)
 
 // ========================================================
 // Render Setup
